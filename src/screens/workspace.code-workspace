@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Desktop/datavanced-webpage"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "datavanced-webpage"
+	}
+}
