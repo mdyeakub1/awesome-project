@@ -8,9 +8,10 @@ import Home from './src/screens/home';
 import Singin from './src/screens/signin';
 import Signup from './src/screens/signup';
 
+
 const AppTheme = {
   ...DefaultTheme,
-  colors:{
+  colors: {
     ...DefaultTheme.colors,
     background: '#fff'
   }
@@ -20,20 +21,20 @@ const Stack = createNativeStackNavigator();
 
 
 export default function App() {
-  const user = false
+  const user = true
   return (
     <NavigationContainer theme={AppTheme}>
       <Stack.Navigator>
         {user ? (
           <>
-           <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="CreateNote" component={CreateNote} />
-        <Stack.Screen name="EditNote" component={EditNote} />
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="CreateNote" component={CreateNote} />
+            <Stack.Screen name="EditNote" component={EditNote} />
           </>
-        ):(
+        ) : (
           <>
-         <Stack.Screen name="Signin" component={Singin} options={{headerShown:false}} />
-        <Stack.Screen name="Signup" component={Signup} />
+            <Stack.Screen name="Signin" component={Singin} options={{ headerShown: false }} />
+            <Stack.Screen name="Signup" component={Signup} />
           </>
 
         )}
