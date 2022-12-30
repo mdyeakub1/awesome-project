@@ -7,6 +7,8 @@ import Button from '../components/button'
 import { NavigationContainer } from '@react-navigation/native'
 import Input from '../components/input'
 
+
+
 export default function Singin({navigation}) {
   return (
       <SafeAreaView style={{flex:1,}}>
